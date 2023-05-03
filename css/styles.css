@@ -1,0 +1,164 @@
+:root {
+  --basic-font-family: "Gilroy", sans-serif;
+  --basic-font-size: 16px;
+
+  --main-font-color: #3a3a3a;
+  --accent-ogange-color: #e89f71;
+  --basic-gray-color: #898989;
+  --dark-gray-color: #616161;
+
+  --max-widht: 1140px;
+  --max-width-container: 1270px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-family: var(--basic-font-family);
+  font-size: var(--basic-font-size);
+  color: var(--main-font-color);
+}
+
+.container {
+  max-width: var(--max-width-container);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header-body {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  min-height: 125px;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  flex: 0 0 calc(494 / 1240 * 100%);
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(29 / 24 * 100%);
+  color: #000000;
+}
+
+.menu {
+  flex: 0 1 420px;
+}
+
+.menu-list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.menu-sub-list {
+  display: none;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 3px;
+  padding: 5px 0px;
+  position: relative;
+}
+
+.menu-link {
+  font-weight: 500;
+  transition: corol 0.3 ease 0s;
+}
+.menu-arrow {
+  margin: 0px 0px 0px 8px;
+  transition: all 0.3 ease 0s;
+}
+
+.menu-arrow img {
+  width: 20px;
+  height: 20px;
+}

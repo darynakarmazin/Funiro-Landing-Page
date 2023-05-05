@@ -151,7 +151,7 @@ body {
 
 .menu-link {
   font-weight: 500;
-  transition: corol 0.3 ease 0s;
+  transition: color 0.3 ease 0s;
 }
 .menu-arrow {
   margin: 0px 0px 0px 8px;

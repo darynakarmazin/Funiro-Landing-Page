@@ -9,6 +9,14 @@ window.onload = function () {
         // console.log(targetElement.closest(".menu-item"));
         targetElement.closest(".menu-item").classList.toggle("hover");
       }
+      if (
+        !targetElement.closest(".menu-item") &&
+        document.querySelectorAll(".menu-item.hover").length > 0
+      ) {
+        document
+          .querySelectorAll(".menu-item.hover")
+          .forEach((elem) => elem.classList.remove("hover"));
+      }
     }
   }
 };

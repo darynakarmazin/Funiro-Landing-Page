@@ -162,6 +162,24 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .menu-item.hover {
+    .menu-sub-list {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .menu-arrow {
+      transform: rotate(-180deg);
+    }
+    .menu-arrow,
+    .menu-link {
+      color: var(--accent-ogange-color);
+    }
+  }
+}
+
 .menu-link {
   font-weight: 500;
   transition: color 0.3s ease 0s;
